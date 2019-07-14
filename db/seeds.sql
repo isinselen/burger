@@ -1,6 +1,7 @@
-USE burger_db;
+DROP DATABASE IF EXISTS exampledb;
+CREATE DATABASE exampledb;
 
-INSERT INTO burgers (burger_name, devoured) VALUES ('Cheese Burger', FALSE);
-INSERT INTO burgers (burger_name, devoured) VALUES ('Umami Burger', FALSE);
-INSERT INTO burgers (burger_name, devoured) VALUES ('Bacon Burger', FALSE);
-INSERT INTO burgers (burger_name, devoured) VALUES ('Vegie Burger', FALSE);
+DROP DATABASE IF EXISTS testdb;
+CREATE DATABASE testdb;
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root'
